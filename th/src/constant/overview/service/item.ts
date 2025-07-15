@@ -1,0 +1,111 @@
+// types
+import {LayoutOverviewItem} from "@/types/overview";
+
+export const ServiceOverviewItem: LayoutOverviewItem[] = [
+    { 
+        id: 1, 
+        layout: '',
+        linkUrl: '/service/',
+        image: '/img/upload/overview/service01.jpg', 
+        title: 'แจ้งเบาะแสการทุจริต', 
+    },
+    { 
+        id: 2, 
+        layout: '',
+        linkUrl: '/service/',
+        image: '/img/upload/overview/service02.jpg', 
+        title: 'ปรึกษา คดีปกครองออนไลน์', 
+    },
+    { 
+        id: 3, 
+        layout: 'box-4',
+        linkUrl: '/service/',
+        image: '/img/upload/overview/service03.jpg', 
+        title: 'ยื่นฟ้องคดีปกครองออนไลน์', 
+    },
+    { 
+        id: 4,
+        layout: 'box-2',
+        linkUrl: '/service/',
+        image: '/img/upload/overview/service04.jpg', 
+        title: 'กำหนดระยะเวลาดำเนินงานคดีปกครอง/ติดตาม', 
+    },
+    { 
+        id: 5,
+        layout: '',
+        linkUrl: '/service/court-forms',
+        image: '/img/upload/overview/service05.jpg', 
+        title: 'ดาวน์โหลดแบบฟอร์ม ศาลและตัวอย่างการเขียน', 
+    },
+    { 
+        id: 6,
+        layout: '',
+        linkUrl: '/service/',
+        image: '/img/upload/overview/service06.jpg', 
+        title: 'ดาวน์โหลด แอปพลิเคชันศาลปกครอง', 
+    },
+    { 
+        id: 7,
+        layout: 'box-2',
+        linkUrl: '/service/',
+        image: '/img/upload/overview/service07.jpg', 
+        title: 'ร้องเรียนการปฏิบัติงานเจ้าหน้าที่ศาลปกครอง', 
+    },
+    // page2
+    // { 
+    //     id: 8,
+    //     layout: 'box-2',
+    //     linkUrl: '/service/',
+    //     image: '/img/upload/overview/service08.jpg', 
+    //     title: 'หอสมุดกฎหมายมหาชนออนไลน์', 
+    // },
+    // { 
+    //     id: 9,
+    //     layout: '',
+    //     linkUrl: '/service/',
+    //     image: '/img/upload/overview/service09.jpg', 
+    //     title: 'เยี่ยมชม พิพิธภัณฑ์เสมือน', 
+    // },
+    // { 
+    //     id: 10,
+    //     layout: '',
+    //     linkUrl: '/service/',
+    //     image: '/img/upload/overview/service10.jpg', 
+    //     title: 'ติดต่อศึกษา ดูงานศาลปกครอง', 
+    // },
+    // { 
+    //     id: 11,
+    //     layout: '',
+    //     linkUrl: '/service/',
+    //     image: '/img/upload/overview/service11.jpg', 
+    //     title: 'ศูนย์บริการประชาชน', 
+    // },
+    // { 
+    //     id: 12,
+    //     layout: '',
+    //     linkUrl: '/service/',
+    //     image: '/img/upload/overview/service12.jpg', 
+    //     title: 'รวมเว็บไซต์ที่น่าสนใจ', 
+    // },
+    // { 
+    //     id: 13,
+    //     layout: 'box-2',
+    //     linkUrl: '/service/',
+    //     image: '/img/upload/overview/service13.jpg', 
+    //     title: 'ถาม-ตอบ / คำถามที่พบบ่อย', 
+    // },
+    // { 
+    //     id: 14,
+    //     layout: 'box-2',
+    //     linkUrl: '/service/online-learning',
+    //     image: '/img/upload/overview/service14.jpg', 
+    //     title: 'การเรียนรู้ผ่านระบบออนไลน์', 
+    // },
+    // { 
+    //     id: 15,
+    //     layout: 'box-2',
+    //     linkUrl: '/service/knowledge-corner',
+    //     image: '/img/upload/overview/service15.jpg', 
+    //     title: 'มุมความรู้สำหรับประชาชน', 
+    // },
+];

@@ -1,0 +1,53 @@
+.layout-inner{
+    .layout-header{
+        &:before{background: var(--color-light); height: 170px; box-shadow: var(--box-shadow);}
+    }
+    .layout-header-logo{
+        .logo-text{
+            .title,
+            .desc{color: var(--color-secondary-dark); text-shadow: none;}
+        }
+    }
+    .layout-header-action{
+        .search-container{
+            .MuiIconButton-root{background-color: var(--color-secondary-dark); box-shadow: none;}
+        }
+        .dropdown{
+            .dropdown-toggle{box-shadow: none;}
+        }
+    }
+    .layout-header-menu{
+        .nav-list{
+            >li{
+                &.active{
+                    > .link{color: var(--color-primary); position: relative; filter: none;
+                        &:before{content: ''; position: absolute; bottom: -15px; left: 0; right: 0; height: 2px; 
+                            background-color: #FFC300;
+                        }
+                    }
+                }
+                > .link{color: var(--color-primary); text-shadow: none;}
+            }
+        }
+    }
+    .layout-header.tiny{background-color: var(--color-light);}
+    .layout-body{padding-top: 178px;}
+}
+
+/* theme color */
+html[data-asw-filter="dark-contrast"]{
+}
+html[data-asw-filter="yellow-contrast"]{
+}
+
+// breakpoints
+@media (max-width: 1600px) {
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}

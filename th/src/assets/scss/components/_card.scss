@@ -1,0 +1,66 @@
+.card{box-shadow: var(--box-shadow);
+	.card-thumb{display: block; overflow: hidden; background: #f8f9fa;
+        figure.ratio{border: none;}
+    }
+	a.card-thumb{
+		.lazy{transition: var(--transition); transform: scale(1);}
+		&:hover{
+			.lazy{transform: scale(1.1);}
+		}
+	}
+	.card-content{padding: 10px; background: var(--color-light); min-height: 180px; 
+		display: flex; flex-direction: column; justify-content: space-between;
+		.title{
+            &.text-limit{-webkit-line-clamp: 2; max-height: 3em; line-height: 1.5em;}
+        }
+		.desc{
+            &.text-limit{-webkit-line-clamp: 2; max-height: 3em; line-height: 1.5em;}
+        }
+	}
+    &.horizontal{display: flex; flex-wrap: wrap;
+        .card-thumb{flex: 0 0 auto; width: auto;
+            figure.ratio{width: 325px;}
+        }
+        .card-content{flex: 1 0 0%;
+            .title{
+                &.text-limit{-webkit-line-clamp: 2; max-height: 3em; line-height: 1.5em;}
+            }
+            .desc{
+                &.text-limit{-webkit-line-clamp: 3; max-height: 4.5em; line-height: 1.5em;}
+            }
+        }
+    }
+}
+
+.card-group{display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap;
+    padding: 0; margin: 0; list-style: none;
+    >.card {-webkit-box-flex: 1; -ms-flex: 1 0 0%; flex: 1 0 0%; margin-bottom: 0; border: 1px solid rgba(0, 0, 0, 0.05);
+        max-width: calc(100%/4); flex: 0 0 calc(100%/4); box-shadow: none; position: relative;
+    }
+}
+
+/* theme color */
+html[data-asw-filter="dark-contrast"]{
+}
+html[data-asw-filter="yellow-contrast"]{
+}
+
+// breakpoints
+@media (max-width: 1600px) {
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+    .card.horizontal .card-thumb figure.ratio {width: 280px;}
+
+    .card.horizontal .card-content .desc.text-limit {-webkit-line-clamp: 2; max-height: 3em;}
+}
+@media (max-width: 991px) {
+    .card.horizontal .card-content .title.text-limit{-webkit-line-clamp: 1; max-height: 1.5em;}
+}
+@media (max-width: 767px) {
+    .card-group >.card {max-width: calc(100%/2); flex: 0 0 calc(100%/2);}
+
+    .card.horizontal .card-thumb{flex: 0 0 auto; width: 100%;}
+    .card.horizontal .card-thumb figure.ratio{width: 100%;}
+}

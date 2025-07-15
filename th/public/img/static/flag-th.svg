@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_34" data-name="Ellipse 34" cx="10" cy="10" r="10" transform="translate(8465 -81)" fill="#626262"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_88" data-name="Mask Group 88" transform="translate(-8465 81)" clip-path="url(#clip-path)">
+    <g id="Layer_45" data-name="Layer 45" transform="translate(8463.571 -85.954)">
+      <path id="Path_451965" data-name="Path 451965" d="M1.429,4.954h20v20h-20Z" fill="#e70000"/>
+      <path id="Path_451966" data-name="Path 451966" d="M1.429,7.157h20V20.351h-20Z" transform="translate(0 1.2)" fill="#fff"/>
+      <path id="Path_451967" data-name="Path 451967" d="M1.429,9.271h20V15.94h-20Z" transform="translate(0 2.351)" fill="#001b9a"/>
+    </g>
+  </g>
+</svg>

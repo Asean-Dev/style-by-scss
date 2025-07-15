@@ -1,0 +1,76 @@
+.layout-feedback{
+    .item-box{padding: 25px 50px; box-shadow: var(--box-shadow2); border-radius: 20px;
+        background-color: var(--color-light);
+        + .item-box,
+        + .form-default{margin-top: 20px;}
+    }
+    .head{padding: 20px 0; margin-bottom: 30px; border-bottom: 1px dashed rgba(0,0,0,0.2);
+        .txt{color: var(--color-primary); letter-spacing: 0; margin-bottom: 10px;}
+    }
+    .body{
+        >.item{
+            +.item{margin-top: 10px;}
+        }
+        .layout-action{
+            &.text{margin-bottom: 0;
+                .title{flex: 1 0 0%; text-align: center;}
+                &.form-legend{margin-bottom: 30px;
+                    .title{text-align: left; color: var(--color-black);}
+                    .inner{background-color: #DEEBFF;}
+                }
+            }
+            .inner{padding: 20px 30px;}
+        }
+        .data-box{
+            .layout-download{margin-top: 0; border-top: none; padding-top: 0;
+                .wrapper{border-top-left-radius: 0; border-top-right-radius: 0;}
+            }
+        }
+        .layout-cms{padding: 20px 0;}
+    }
+    .form-default{padding: 0; box-shadow: none; border-radius: 0; background-color: transparent;
+        .item-box{
+            .body{padding: 10px 0;}
+        }
+        .form-subtitle{
+            .title{color: var(--color-black); margin-bottom: 30px; letter-spacing: 0px;}
+        }
+        .form-radio{padding-top: 50px;
+            .MuiFormControl-root{display: flex; flex-direction: row; align-items: center; padding: 20px 30px; background-color: #FBFBFB;
+                + .MuiFormControl-root{margin-top: 10px;}
+                &:first-child{
+                    .MuiFormControlLabel-root{
+                        .MuiFormControlLabel-label{display: block;}
+                    }
+                }
+                .MuiFormLabel-root{flex: 1 0 0%; margin: 0; font-size: var(--typo-sm); font-weight: var(--fw-normal); color: var(--color-black);}
+                .MuiFormGroup-root{position: relative;}
+                .MuiFormControlLabel-root{min-width: 180px; text-align: center; justify-content: center;
+                    .MuiFormControlLabel-label{font-size: var(--typo-sm); font-weight: var(--fw-bold); color: var(--color-black);
+                        position: absolute; bottom: 100%; left: 0; right: 0; margin: auto auto 30px; text-align: center; display: none;
+                    }
+                }
+                .MuiRadio-root{padding: 5px;}
+            }
+        }
+        .form-action{justify-content: space-between; padding-top: 40px;}
+    }
+}
+
+/* theme color */
+html[data-asw-filter="dark-contrast"]{
+}
+html[data-asw-filter="yellow-contrast"]{
+}
+
+// breakpoints
+@media (max-width: 1600px) {
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}

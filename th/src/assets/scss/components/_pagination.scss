@@ -1,0 +1,227 @@
+.pagination-block {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pagination-label {
+  flex: 1 0 0%;
+  width: 100%;
+  max-width: 100%;
+  .title {
+    color: var(--color-default);
+  }
+  span {
+    color: var(--color-primary);
+    display: inline;
+    margin: 0 8px;
+    font-weight: var(--fw-bold);
+  }
+}
+.pagination {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+  padding-left: 30px;
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 50px;
+    height: 50px;
+    padding: 0 10px;
+    position: relative;
+    border-radius: 50%;
+    transform: var(--transition);
+    background-color: var(--color-light);
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+    &:hover {
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+    .feather {
+      position: relative;
+      top: 1px;
+    }
+  }
+  .active {
+    .link {
+      color: var(--color-light);
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+  }
+  .item-list {
+    margin: 0;
+    > li {
+      display: inline-block;
+      vertical-align: middle;
+      + li {
+        margin-left: 16px;
+      }
+    }
+  }
+  .pagination-nav {
+    .link {
+      color: var(--color-secondary);
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+  .jumpPage {
+    width: 110px;
+    .MuiFormControl-root {
+      label {
+        margin: 0 0 0 2px;
+        color: var(--color-secondary);
+        top: -2px;
+      }
+      fieldset {
+        border-radius: 25px;
+        border-color: var(--color-secondary);
+      }
+    }
+    .MuiSelect-root {
+      margin: 0;
+      padding: 0 10px 0 0;
+      .MuiSelect-select.MuiSelect-select {
+        padding: 0 10px;
+        height: 50px;
+      }
+    }
+    .MuiSvgIcon-root {
+      color: var(--color-secondary);
+    }
+  }
+}
+
+/* theme color */
+html[data-asw-filter="dark-contrast"] {
+}
+html[data-asw-filter="yellow-contrast"] {
+}
+
+@media (max-width: 1199px) {
+  .confidence {
+    .pagination-label {
+      text-align: center;
+      flex: 0 0 auto;
+      width: 100%;
+    }
+    .pagination {
+      position: relative;
+      padding-bottom: 68px;
+    }
+    .pagination .item-list > li + li {
+      margin-left: 5px;
+    }
+    .pagination .link {
+      padding: 0 5px;
+    }
+    .pagination .jumpPage {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .pagination .select2-container--default .select2-selection--single {
+      height: 30px;
+    }
+    .pagination
+      .select2-container
+      .select2-selection--single
+      .select2-selection__rendered {
+      line-height: 28px;
+    }
+    .pagination
+      .select2-container--default
+      .select2-selection--single
+      .select2-selection__arrow {
+      height: 30px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .pagination-block {
+    justify-content: center;
+  }
+  .pagination-label {
+    text-align: center;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .pagination {
+    justify-content: center;
+    display: flex;
+    margin-top: 16px;
+    flex: 0 0 auto;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .pagination {
+    position: relative;
+    padding-bottom: 68px;
+  }
+  .pagination .item-list > li + li {
+    margin-left: 5px;
+  }
+  .pagination .link {
+    min-width: 30px;
+    height: 30px;
+    padding: 0 5px;
+  }
+  .pagination .jumpPage {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    margin: auto;
+    max-height: 30px;
+    .MuiFormControl-root {
+      label {
+        margin: 0 0 0 0;
+        color: var(--color-secondary);
+        top: -12px;
+      }
+      fieldset {
+        border-radius: 25px;
+        border-color: var(--color-secondary);
+      }
+    }
+
+    .MuiSelect-root {
+      margin: 0;
+      padding: 0 10px 0 0;
+      .MuiSelect-select.MuiSelect-select {
+        padding: 0 10px;
+        height: 30px;
+      }
+    }
+  }
+  .pagination .select2-container--default .select2-selection--single {
+    height: 30px;
+  }
+
+  .pagination
+    .select2-container
+    .select2-selection--single
+    .select2-selection__rendered {
+    line-height: 28px;
+  }
+  .pagination
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    height: 30px;
+  }
+}

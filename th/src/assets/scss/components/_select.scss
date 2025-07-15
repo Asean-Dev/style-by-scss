@@ -1,0 +1,30 @@
+.MuiAutocomplete-input{color: var(--color-dark);     
+    padding: var(--form-padding);
+    padding-left:var(--loginForm-padding);
+    padding-right:var(--loginForm-padding);
+}
+
+.MuiMenu-paper{
+    &.MuiPopover-paper{border-radius: 15px;}
+    .MuiMenuItem-root{margin-bottom: 0; padding: 10px 15px;
+        +.MuiMenuItem-root{border-top: 1px solid var(--color-snow);}
+    }
+}
+
+/* theme color */
+html[data-asw-filter="dark-contrast"]{
+}
+html[data-asw-filter="yellow-contrast"]{
+}
+
+// breakpoints
+@media (max-width: 1600px) {
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}

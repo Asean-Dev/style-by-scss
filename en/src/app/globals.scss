@@ -1,0 +1,45 @@
+@import "../assets/scss/main.scss";
+
+html {
+  height: 100%;
+  // overflow-x: hidden;
+  // -webkit-overflow-scrolling: touch;
+}
+body {
+  font-family: var(--family-default);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #f8fcfc !important;
+}
+
+body,
+#root,
+#root__layout {
+  min-height: 100%;
+  background-color: #f8fcfc !important;
+}
+.swiper {
+  background-color: transparent !important;
+  background: none !important;
+  overflow: visible !important;
+  // padding-bottom: 20px;
+}
+.swiper-wrapper {
+  background-color: transparent !important;
+}
+
+// .swiper-slide {
+//   &.swiper-slide-custom {
+//     z-index: 10;
+//     width: 387.09px !important;
+//   }
+// }
+
+.swiper-slide-active {
+  &.swiper-slide-active-custom {
+    z-index: 10;
+    width: 573px !important;
+  }
+}

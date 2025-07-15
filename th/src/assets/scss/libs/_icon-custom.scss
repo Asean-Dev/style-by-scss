@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'icon-custom';
+    src: url('../../font/icon-custom/icon-custom.eot?rslnfy');
+    src: url('../../font/icon-custom/icon-custom.eot?rslnfy#iefix') format('embedded-opentype'),
+      url('../../font/icon-custom/icon-custom.ttf?rslnfy') format('truetype'),
+      url('../../font/icon-custom/icon-custom.woff?rslnfy') format('woff'),
+      url('../../font/icon-custom/icon-custom.svg?rslnfy#icon-custom') format('svg');
+    font-weight: normal; font-style: normal; font-display: block;
+}
+[class^="ic-"],[class*="ic-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icon-custom' !important; speak: never; line-height: 1;
+    font-style: normal; font-weight: normal; font-variant: normal; text-transform: none;
+    
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.ic-facebook:before {content: "\e94b";}
+.ic-facebook-outline:before {content: "\e900";}
+.ic-social-fb:before {content: "\e90c";}
+.ic-linkedin-outline:before {content: "\e901";}
+.ic-social-ig-outline:before {content: "\e902";}
+.ic-social-ig:before {content: "\e90d";}
+.ic-social-line-outline:before {content: "\e903";}
+.ic-social-line:before {content: "\e90e";}
+.ic-social-youtube:before {content: "\e910";}
+.ic-social-x:before {content: "\e924";}
